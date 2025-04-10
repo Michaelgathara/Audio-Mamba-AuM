@@ -193,8 +193,8 @@ class Namespace:
 class AudioMamba(nn.Module):
     def __init__(self, 
                  spectrogram_size=(128, 1024),
-                 patch_size=(16, 16),
-                 strides=(16, 16),
+                 patch_size=(128, 16),
+                 strides=(128, 12), # changed the stride to have some overlap
                  depth=24, 
                  embed_dim=768,
                  channels=1,
